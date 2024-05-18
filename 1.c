@@ -22,3 +22,6 @@ float consec(int m, int n) {
     float count = 0;
     min = m;
 }
+int main() {
+    
+}
