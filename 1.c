@@ -23,5 +23,5 @@ float consec(int m, int n) {
     min = m;
 }
 int main() {
-    
+    return 0;
 }
