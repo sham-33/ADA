@@ -19,23 +19,19 @@ float euclid(int m, int n) {
 }
 
 float consec(int m, int n) {
-    int min;
     float count = 0;
-    min = m;
-    if (n < min) 
-        min = n;
+    int min = m < n ? m : n;
     while (1) {
         count++;
         if (m % min == 0) {
             count++;
-            if (n % min == 0)
-                break;
+            if (n % min == 0) {
+                return count;
+            }
             min -= 1;
         } else
             min -= 1;
-    }
-
-    return count;
+    } 
 }
 
 float modified(int m,int n) { 
@@ -53,6 +49,7 @@ float modified(int m,int n) {
  
     return count;  
 } 
+
 
 void analysis(int choice) {
     int m, n, i, j, k;
@@ -110,7 +107,7 @@ int main() {
     int choice, m, n;
     printf("GCD\n");
     printf("1. Euclid's method.\n");
-    printf("2. Consecutive subtraction method.\n");
+    printf("2. Consecutive integer method.\n");
     printf("3. Modified Euclid's method.\n");
     printf("0. Exit\n");
     do {
