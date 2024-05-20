@@ -43,8 +43,8 @@ float modified(int m,int n) {
             m = n;
             n = temp; 
         } 
-    m = m - n; 
-    count += 1; 
+        m = m - n; 
+        count++; 
     } 
  
     printf("GCD = %d\n", m); 
