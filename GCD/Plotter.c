@@ -43,13 +43,12 @@ float modified(int m,int n) {
             m = n;
             n = temp; 
         } 
-    m = m - n; 
-    count += 1; 
+        m = m - n; 
+        count++; 
     } 
- 
+    
     return count;  
 } 
-
 
 void analysis(int choice) {
     int m, n, i, j, k;
@@ -110,6 +109,7 @@ int main() {
     printf("2. Consecutive integer method.\n");
     printf("3. Modified Euclid's method.\n");
     printf("0. Exit\n");
+    
     do {
         printf("\nEnter your choice from the menu: ");
         scanf("%d", &choice);

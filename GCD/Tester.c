@@ -19,7 +19,7 @@ float euclid(int m, int n) {
 
 float consec(int m, int n) {
     float count = 0;
-    int min = m < n ? m : n;
+    int min = (m < n)? m : n;
     while (1) {
         count++;
         if (m % min == 0) {
@@ -33,6 +33,7 @@ float consec(int m, int n) {
             min -= 1;
     } 
 }
+
 float modified(int m,int n) { 
     int temp; 
     float count = 0; 
@@ -57,6 +58,7 @@ int main() {
     printf("2. Consecutive integer method.\n");
     printf("3. Modified Euclid's method.\n");
     printf("0. Exit\n");
+
     do {
         printf("\nEnter your choice from the menu: ");
         scanf("%d", &choice);
