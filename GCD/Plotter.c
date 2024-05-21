@@ -34,21 +34,15 @@ float consec(int m, int n) {
     } 
 }
 
-float modified(int m,int n) { 
-    int temp; 
-    float count = 0; 
-    while (n > 0) { 
-        if (n > m) { 
-            temp = m;
-            m = n;
-            n = temp; 
-        } 
-        m = m - n; 
-        count++; 
-    } 
-    
-    return count;  
-} 
+float modified(int m, int n) {
+    float count = 1;
+    while (m != n) {
+        (m > n)? (m = m - n) : (n = n - m);
+        count++;
+    }
+    return count;
+}
+
 
 void analysis(int choice) {
     int m, n, i, j, k;
