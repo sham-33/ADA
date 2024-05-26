@@ -51,7 +51,7 @@ int main() {
                 if (index != -1)
                     printf("Element found at index %d\n", index);
                 else    
-                    printf("Element no found\n");
+                    printf("Element not found\n");
                 break;
             case 2:
                 printf("Enter the element to search for: ");
@@ -60,7 +60,7 @@ int main() {
                 if (index != -1)
                     printf("Element found at index %d\n", index);
                 else    
-                    printf("Element no found\n");
+                    printf("Element not found\n");
                 break;
         }
     } while (choice != 0);
